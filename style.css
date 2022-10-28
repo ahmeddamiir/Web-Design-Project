@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media only screen and (max-width: 900px){
+    .navigation{
+        width: 95%;
+    }
+}
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -19,7 +24,8 @@ header{
 
 .website-name{
     text-decoration: none;
-    color: #0074d9;
+    color: #c5baad;
+    text-shadow: .7px .7px black;
     text-transform: inherit;
     padding-left: 50px;
     font-weight: 700;
@@ -32,7 +38,8 @@ header{
 }
 
 .navigation a{
-    color: #0074d9;
+    color: #c5baad;
+    text-shadow: .7px .7px black;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -40,7 +47,123 @@ header{
 }
 
 .navigation a:hover{
-    color: #0074d0;
+    color: #98918b;
     font-size: larger;
     font-weight: bolder;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; <!--'doesnt work properly with Iphones'-->
+}
+
+.main h2 {
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c5baad;
+    font-size: 3em;
+    text-shadow: 1px 1px black;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: aliceblue;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-btn {
+    color: white;
+    background-color: #98918b;
+    text-shadow: .5px .5px black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    opacity: 70%;
+}
+
+.main-btn:hover {
+    background-color: #c5baad;
+    transform: scale(1.1);
+    opacity: 50%;
+}
+
+.social-icons a {
+    color: #b7aea3;
+    text-shadow: 1px 1px black;
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #c5baad;
+    text-shadow: .7px .7px black;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #c5baad;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #98918b;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 10px;
 }
