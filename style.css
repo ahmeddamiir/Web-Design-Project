@@ -147,7 +147,7 @@ header{
 }
 
 .card {
-    background-color: whitesmoke;
+    background-color: transparent;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
@@ -158,6 +158,7 @@ header{
 
 .card:hover {
     transform: scale(1.1);
+    background-color: whitesmoke;
 }
 
 .icon {
@@ -191,8 +192,7 @@ header{
 }
 
 .picture-card {
-    background-color: whitesmoke;
-    border: 1px solid white;
+    background-color: transparent;
     min-height: 14em;
     width: 23em;
     overflow: hidden;
@@ -203,6 +203,8 @@ header{
 
 .picture-card:hover {
     transform: scale(1.1);
+    border: 1px solid white;
+    background-color: whitesmoke;
 }
 
 .picture-card:hover .tour-picture {
