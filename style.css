@@ -120,6 +120,15 @@ header{
     padding-right: 20px;
 }
 
+.cards {
+    width: 100%;
+    min-height: 100vh;
+    background: url("Pics/ACO_Lighthouse_of_Alexandria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -138,7 +147,7 @@ header{
 }
 
 .card {
-    background-color: white;
+    background-color: whitesmoke;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
@@ -166,4 +175,68 @@ header{
     font-size: 1.2em;
     font-weight: 800;
     margin: 10px;
+}
+
+.tours {
+    width: 100%;
+    min-height: 100vh;
+    background: url("Pics/ACO_Lighthouse_of_Alexandria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.tours .content {
+    margin-top: 30px;
+}
+
+.picture-card {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.picture-card:hover {
+    transform: scale(1.1);
+}
+
+.picture-card:hover .tour-picture {
+    filter: opacity(0.9) saturate(1.8) contrast(1.2);
+}
+
+.tour-picture img {
+    width: 100%;
+}
+
+.tou-info {
+    padding: 1em;
+}
+
+.picture-category {
+    font-size: 0.9em;
+    text-align: center;
+    color: black;
+}
+
+.picture-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #c5baad;
+    transition: 0.7s ease;
+}
+
+.more-details:hover {
+    color: #817674;
 }
