@@ -215,7 +215,7 @@ header{
     width: 100%;
 }
 
-.tou-info {
+.tour-info {
     padding: 1em;
 }
 
@@ -241,4 +241,97 @@ header{
 
 .more-details:hover {
     color: #817674;
+}
+
+.features .info p {
+    color: #817674;
+    font-size: 1.4em;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #b7aea3;
+}
+
+.top {
+    text-decoration: none;
+    padding: 10px;
+    font-family: "JetBrains Mono";
+    color: #b7aea3;
+    background-color: transparent;
+    border-radius: 100px;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.top:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*Screens from 0 pixels to 1023*/
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+
+    .main h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Screens from 0 pixels to 641*/
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main h2 {
+        font-size: 0.8em;
+    }
+
+    .main h3 {
+        font-size: 1.4em;
+    }
+}
+
+/*Screens from 0 pixels to 300*/
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+
 }
