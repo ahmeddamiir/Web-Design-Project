@@ -25,3 +25,13 @@
     grid-column-start: 1;
     grid-column-end: 7;
 }
+.column-side-left{
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+.column-side-right{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
