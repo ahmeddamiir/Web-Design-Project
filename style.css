@@ -511,14 +511,124 @@ hr {
 }
 
 
-.ancient-history .content .story-card d{
+.ancient-history .content .story-card{
     background-color: whitesmoke;
-    min-height: 14em;
-    width: 23em;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
     transition: 0.7s ease;
+}
+
+.story-card-info {
+    text-align: center;
+}
+
+.story-card-info .chapter-number {
+    background-image: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");
+    letter-spacing: 7px;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Andalus;
+}
+@media (max-width: 1023px) {
+    .story-card-info .chapter-number {
+        font-size: 1.8em;
+        letter-spacing: 5px;
+    }
+}
+@media (max-width: 641px) {
+    .story-card-info .chapter-number {
+        font-size: 1.4em;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 300px) {
+    .story-card-info .chapter-number {
+        font-size: 1em;
+        letter-spacing: 0px;
+    }
+}
+@media (max-width: 100px) {
+    .chapter-number {
+        font-size: 0.5em;
+        letter-spacing: -1px;
+    }
+}
+
+.story-card-info .chapter-title {
+    background-image: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");
+    letter-spacing: 5px;
+    font-size: 2.3em;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Arabic Typesetting";
+}
+@media (max-width: 1023px) {
+    .story-card-info .chapter-title {
+        font-size: 2em;
+        letter-spacing: 4px;
+    }
+}
+@media (max-width: 641px) {
+    .story-card-info .chapter-number {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 300px) {
+    .story-card-info .chapter-number {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width: 100px) {
+    .chapter-number {
+        font-size: 0.3em;
+        letter-spacing: 0px;
+    }
+}
+
+.picture-card-pic {
+    width: auto;
+    height: auto;
+}
+@media (max-width: 1023px) {
+    .picture-card-pic {
+        width: 500px;
+        height: 600px;
+    }
+}
+@media (max-width: 700px) {
+    .picture-card-pic {
+        width: 400px;
+        height: 500px;
+    }
+}
+@media (max-width: 500px) {
+    .picture-card-pic {
+        width: 300px;
+        height: 400px;
+    }
+}
+@media (max-width: 300px) {
+    .picture-card-pic {
+        width: 150px;
+        height: 200px;
+    }
+}
+@media (max-width: 100px) {
+    .picture-card-pic {
+        width: 50px;
+        height: 60px;
+    }
+}
+
+.picture-story {
+    background-color: tan;
+    font-size: larger;
+    color: black;
+    text-shadow: 1px 1px black;
 }
 
 /*Screens from 0 pixels to 1023*/
