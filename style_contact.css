@@ -1,21 +1,27 @@
 /* The main grid */
-.body-contact{
+.body-contact {
     margin: 0;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100px 1fr 1fr 150px;
-    gap: 10px;
+    gap: 2px;
     padding: 0px;
     box-sizing: border-box;
 
 }
-.container div{
+
+.container div {
 
     border: 1px solid black;
-    
+
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 7;
 }
