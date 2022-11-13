@@ -655,3 +655,14 @@ hr {
     font-weight: 500;
     color:rgb(199, 190, 190)
 }
+.contactform{
+    /*width: 40%;*/
+    padding: 30px 60px;
+    background: #c5baad;
+}
+
+.contactform h2{
+    font-size: 30px;
+    color:#664c2e ;
+    font-weight: 500;
+}
