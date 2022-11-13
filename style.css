@@ -712,3 +712,43 @@ hr {
     font-size: 18px;
     
 }
+
+/* for ipads */
+@media (max-width:1190px){
+    .contact{
+        padding: 150px 0 150px 0 ;
+        align-content: center;
+        
+
+    }
+    .contact .content-contact{
+        position: relative;
+        
+    }
+    .contact .content-contact h2{
+        
+        font-size: 25px;
+        font-weight: 500;
+
+
+    }
+    .contact .content-contact p{
+        
+        font-weight: 200px;
+        padding: 0 20px 0 20px;
+        
+
+    }
+  
+    .container{
+        flex-direction: column;
+        
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        width: 350px;
+        padding: 20px 40px 20px 40px;
+    }
+ 
+
+}
