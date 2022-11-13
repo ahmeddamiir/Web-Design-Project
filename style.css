@@ -643,3 +643,11 @@ hr {
     color: black;
 
 }
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #b7aea3;
+    flex-direction: column;
+    font-weight: 300;
+}
