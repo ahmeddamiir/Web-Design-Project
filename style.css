@@ -628,3 +628,18 @@ hr {
    display: flex;
 
 }
+.container .contactInfo .box .icon-contact{
+    min-width: 60px;
+    height: 60px;
+    background-color:#c5baad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contactInfo .box .icon-contact .fa {
+    color: black;
+
+}
