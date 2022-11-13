@@ -592,3 +592,9 @@ hr {
     background: url(./Pics/background-g31e1edc8b_1920.jpeg);
     background-size: cover;
 }
+
+.contact .content-contact{
+    max-width: 800px;
+    text-align: center;
+    
+}
