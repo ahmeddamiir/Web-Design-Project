@@ -1,11 +1,13 @@
 /*Mobile first approach needs to be rectified -As it is vice versa-*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@media only screen and (max-width: 900px){
-    .navigation{
+
+@media only screen and (max-width: 900px) {
+    .navigation {
         width: 95%;
     }
 }
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@
     scroll-behavior: smooth;
 }
 
-header{
+header {
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -27,7 +29,7 @@ header{
     background-position: top;
 }
 
-.website-name{
+.website-name {
     text-decoration: none;
     color: #c5baad;
     text-shadow: .7px .7px black;
@@ -37,12 +39,12 @@ header{
     font-size: 1.9em;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     width: 150px;
 }
 
-.navigation a{
+.navigation a {
     color: #c5baad;
     text-shadow: .7px .7px black;
     text-decoration: none;
@@ -51,13 +53,13 @@ header{
     padding-left: 30px;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: #98918b;
     font-size: larger;
     font-weight: bolder;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -65,7 +67,8 @@ header{
     background: url(Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; <!--'doesnt work properly with Iphones'-->
+    background-attachment: fixed;
+    < !--'doesnt work properly with Iphones' -->
 }
 
 .main h1 {
@@ -422,6 +425,7 @@ header{
         width: 55%;
     }
 }
+
 .middle-side .land-marks {
     overflow-wrap: break-word;
     font-size: 18pt;
@@ -511,7 +515,7 @@ hr {
 }
 
 
-.ancient-history .content .story-card d{
+.ancient-history .content .story-card d {
     background-color: whitesmoke;
     min-height: 14em;
     width: 23em;
@@ -576,5 +580,15 @@ hr {
 
 }
 
-
-
+/*---------------------------contact page ----------------------*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./Pics/background-g31e1edc8b_1920.jpeg);
+    background-size: cover;
+}
