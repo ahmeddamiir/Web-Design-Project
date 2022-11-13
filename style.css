@@ -628,6 +628,11 @@ hr {
    display: flex;
 
 }
+.container .contactInfo .box:hover{
+    transform: scale(1.1);
+    opacity: 90%;
+
+}
 .container .contactInfo .box .icon-contact{
     min-width: 60px;
     height: 60px;
