@@ -712,7 +712,11 @@ hr {
     font-size: 18px;
     
 }
-
+.contactform .inputBox .sub-btn:hover{
+    
+    transform: scale(1.1);
+    opacity: 80%;
+}
 /* for ipads */
 @media (max-width:1190px){
     .contact{
