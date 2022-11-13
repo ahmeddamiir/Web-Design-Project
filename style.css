@@ -752,3 +752,50 @@ hr {
  
 
 }
+
+/* for phones */
+@media (max-width:900px){
+    .contact{
+        padding: 150px 0 150px 0 ;
+        align-content: center;
+        
+
+    }
+    .contact .content-contact{
+        position: relative;
+        
+    }
+    .contact .content-contact h2{
+        
+        font-size: 25px;
+        font-weight: 500;
+
+
+    }
+    .contact .content-contact p{
+        
+        font-weight: 200px;
+        padding: 0 20px 0 20px;
+        
+
+    }
+  
+    .container{
+        flex-direction: column;
+        
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        
+    }
+    .container  .contactform{
+        width: 300px;
+        padding: 20px 40px 20px 40px;
+    }
+    .container .contactform h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+ 
+}
