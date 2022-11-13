@@ -651,3 +651,7 @@ hr {
     flex-direction: column;
     font-weight: 300;
 }
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color:rgb(199, 190, 190)
+}
