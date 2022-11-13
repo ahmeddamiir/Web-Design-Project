@@ -702,3 +702,13 @@ hr {
     font-size: 12px;
     transform: translateY(-20px);
 }
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: #817674;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+}
