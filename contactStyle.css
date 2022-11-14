@@ -1,0 +1,819 @@
+/*Mobile first approach needs to be rectified -As it is vice versa-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (max-width: 900px) {
+    .navigation {
+        width: 95%;
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 150px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #c5baad);
+    /*background-image: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");*/
+    border-radius: 100px;
+    background-position: top;
+}
+
+.website-name {
+    text-decoration: none;
+    color: #c5baad;
+    text-shadow: .7px .7px black;
+    text-transform: inherit;
+    padding-left: 50px;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+
+.logo {
+    text-decoration: none;
+    width: 150px;
+}
+
+.navigation a {
+    color: #c5baad;
+    text-shadow: .7px .7px black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: #98918b;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    <!--'doesnt work properly with Iphones'-->
+}
+
+.main h1 {
+    color: aliceblue;
+    text-shadow: 1.2px 1.2px black;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main h1 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c5baad;
+    font-size: 3em;
+    text-shadow: 1.5px 1.5px black;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: aliceblue;
+    font-size: 2em;
+    text-shadow: 1.3px 1.4px black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-btn {
+    color: white;
+    background-color: #98918b;
+    text-shadow: .5px .5px black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    opacity: 70%;
+}
+
+.main-btn:hover {
+    background-color: #c5baad;
+    transform: scale(1.1);
+    opacity: 50%;
+}
+
+.main .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: steelblue;
+    text-shadow: 1px 1px black;
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+
+.cards {
+    width: 100%;
+    min-height: 100vh;
+    background: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: steelblue;
+    text-shadow: 1px 1px black;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(183, 174, 163, 0.6);
+    font-size: larger;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #817674;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: darkslategrey;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.tours {
+    width: 100%;
+    min-height: 100vh;
+    background: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.tours .content {
+    margin-top: 30px;
+}
+
+.picture-card {
+    background-color: whitesmoke;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.picture-card:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+.picture-card:hover .tour-picture {
+    filter: opacity(0.9) saturate(1.8) contrast(1.2);
+}
+
+.tour-picture img {
+    width: 100%;
+}
+
+.tour-info {
+    padding: 1em;
+}
+
+.picture-category {
+    font-size: 0.9em;
+    text-align: center;
+    color: black;
+}
+
+.picture-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #c5baad;
+    transition: 0.7s ease;
+}
+
+.more-details:hover {
+    color: #817674;
+}
+
+.features {
+    background-color: aliceblue;
+}
+
+.features .info p {
+    color: #817674;
+    font-size: 1.4em;
+}
+
+.partners {
+    background-color: ghostwhite;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #b7aea3;
+}
+
+.top {
+    text-decoration: none;
+    padding: 10px;
+    font-family: "JetBrains Mono";
+    color: #b7aea3;
+    background-color: transparent;
+    border-radius: 100px;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.top:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.partners {
+    width: 100%;
+    min-height: 35vh;
+    background-color: floralwhite;
+}
+
+.partners .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.partner-card {
+    background: transparent;
+    width: 10em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 10%);
+    border-radius: 100px;
+    padding: 20px;
+    margin: auto;
+    transition: 0.7s ease;
+}
+
+.partner-card:hover .partner-picture img {
+    filter: saturate(100%);
+}
+
+.partner-picture img {
+    width: 100%;
+    filter: saturate(0%);
+}
+
+.subscribe {
+    background-color: floralwhite;
+}
+
+.subscribe h3 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscribe .email {
+    width: 30%;
+    box-shadow: 1px 1px black;
+    border-radius: 15px;
+    border-color: #98918b;
+    border-style: wave;
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+    padding: 0.2em;
+    background-color: transparent;
+}
+
+.subscribe .submit-btn {
+    color: black;
+    background-color: #c5baad;
+    text-shadow: 1px 1px darkslategrey;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.2em;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+
+.subscribe .submit-btn:hover {
+    color: aliceblue;
+    background-color: #817674;
+}
+
+/*--------------------------Destinations--------------------------*/
+
+.middle-side {
+    min-height: 775px;
+    padding-top: 150px;
+    width: 50%;
+}
+
+@media (max-width: 1023px) {
+    .middle-side {
+        min-height: 800px;
+        padding-top: 200px;
+        width: 60%;
+    }
+}
+
+.middle-side .content {
+    overflow-wrap: break-word;
+    width: 85%;
+    border: 1px dashed green;
+}
+
+@media (max-width: 1023px) {
+    .middle-side .content {
+        overflow-wrap: break-word;
+        width: 75%;
+    }
+}
+
+@media (max-width: 641px) {
+    .middle-side .content {
+        overflow-wrap: break-word;
+        width: 65%;
+    }
+}
+
+@media (max-width: 300px) {
+    .middle-side .content {
+        overflow-wrap: break-word;
+        width: 55%;
+    }
+}
+
+.middle-side .land-marks {
+    overflow-wrap: break-word;
+    font-size: 18pt;
+    line-height: 106%;
+    font-family: "Times New Roman", "serif";
+    font-weight: bold;
+    color: red;
+}
+
+@media (max-width: 1023px) {
+    .middle-side .land-marks {
+        overflow-wrap: break-word;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 641px) {
+    .middle-side .land-marks {
+        overflow-wrap: break-word;
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 300px) {
+    .middle-side .land-marks {
+        overflow-wrap: break-word;
+        font-size: 1em;
+    }
+}
+
+.middle-side .places {
+    overflow-wrap: break-word;
+    font-size: 15pt;
+    line-height: 106%;
+    color: steelblue;
+}
+
+@media (max-width: 1023px) {
+    .middle-side .places {
+        overflow-wrap: break-word;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 641px) {
+    .middle-side .places {
+        overflow-wrap: break-word;
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 300px) {
+    .middle-side .places {
+        overflow-wrap: break-word;
+        font-size: 1em;
+    }
+}
+
+.middle-side .social-icons a {
+    overflow-wrap: break-word;
+    color: black;
+}
+
+/*-----------------History-----------------------------*/
+.ancient-history .title-page {
+    padding-top: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ancient-history h1 {
+    font-size: 2.5em;
+    font-family: "Arabic Typesetting";
+    letter-spacing: 15px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #c5baad;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+.ancient-history .content .story-card d {
+    background-color: whitesmoke;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+/*Screens from 0 pixels to 1023*/
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+
+    .main h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Screens from 0 pixels to 641*/
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main h2 {
+        font-size: 0.8em;
+    }
+
+    .main h3 {
+        font-size: 1.4em;
+    }
+}
+
+/*Screens from 0 pixels to 300*/
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+
+}
+
+/*---------------------------contact page ----------------------*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/Pics/background-g31e1edc8b_1920.jpeg);
+    background-size: cover;
+}
+
+.contact .content-contact{
+    max-width: 550px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    
+}
+.contact .content-contact h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:#666;
+}
+.contact .content-contact p{
+    
+    font-weight: 500;
+    color:#c5baad;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.container .contactInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    height: 410px;
+    
+    
+}
+.container .contactInfo .box{
+   position: relative;
+   padding: 20px 0;
+   display: flex;
+   width: 30%;
+   backdrop-filter: blur(30px);
+
+}
+.container .contactInfo .box:hover{
+    transform: scale(1.1);
+    opacity: 90%;
+
+}
+.container .contactInfo .box .icon-contact{
+    min-width: 60px;
+    height: 60px;
+    background-color:#c5baad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contactInfo .box .icon-contact .fa {
+    color: black;
+
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: whitesmoke;
+    flex-direction: column;
+    font-weight:600;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 700;
+    color:#666;
+
+}
+.contactform{
+    /*width: 40%;*/
+    padding: 30px 60px;
+    background: #c5baad;
+}
+
+.contactform h2{
+    font-size: 30px;
+    color:#664c2e ;
+    font-weight: 500;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span{
+    color: #664c2e;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: #817674;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+.contactform .inputBox .sub-btn:hover{
+    
+    transform: scale(1.1);
+    opacity: 80%;
+}
+/* for ipads */
+@media (max-width:1190px){
+    .contact{
+        padding: 150px 0 150px 0 ;
+        align-content: center;
+        
+
+    }
+    .contact .content-contact{
+        position: relative;
+        
+    }
+    .contact .content-contact h2{
+        
+        font-size: 25px;
+        font-weight: 500;
+
+
+    }
+    .contact .content-contact p{
+        
+        font-weight: 200;
+        padding: 0 20px 0 20px;
+        
+
+    }
+  
+    .container{
+        flex-direction: column;
+        
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        width: 350px;
+        padding: 20px 40px 20px 40px;
+    }
+ 
+
+}
+
+/* for phones */
+@media (max-width:900px){
+    .contact{
+        padding: 150px 0 150px 0 ;
+        align-content: center;
+        
+
+    }
+    .contact .content-contact{
+        position: relative;
+        
+    }
+    .contact .content-contact h2{
+        
+        font-size: 25px;
+        font-weight: 500;
+
+
+    }
+    .contact .content-contact p{
+        
+        font-weight: 200;
+        padding: 0 20px 0 20px;
+        
+
+    }
+  
+    .container{
+        flex-direction: column;
+        
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        width: 300px;
+        
+        
+    }
+    .container  .contactform{
+        width: 300px;
+        padding: 20px 40px 20px 40px;
+    }
+    .container .contactform h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+ 
+}
