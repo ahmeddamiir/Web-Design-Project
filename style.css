@@ -68,7 +68,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    < !--'doesnt work properly with Iphones' -->
+    
 }
 
 .main h1 {
@@ -824,3 +824,4 @@ hr {
     
  
 }
+
