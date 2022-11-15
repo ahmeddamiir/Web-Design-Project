@@ -18,7 +18,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 190px;
+    padding: 5px 150px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #c5baad);
+    /*background-image: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");*/
+    border-radius: 100px;
+    background-position: top;
 }
 .website-name{
     text-decoration: none;
