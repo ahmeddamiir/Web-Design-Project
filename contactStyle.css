@@ -68,7 +68,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    <!--'doesnt work properly with Iphones'-->
+
 }
 
 .main h1 {
@@ -589,25 +589,35 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(/Pics/background-g31e1edc8b_1920.jpeg);
+    background: url(./Pics/background-g31e1edc8b_1920.jpeg);
     background-size: cover;
 }
 
 .contact .content-contact{
-    max-width: 550px;
+    max-width: 500px;
     text-align: center;
-    backdrop-filter: blur(20px);
-    
+    padding-top: 100px;
+    /* backdrop-filter: blur(20px); */
+
 }
 .contact .content-contact h2{
     font-size: 36px;
     font-weight: 500;
-    color:#666;
+    color:wheat;
+    text-shadow: 1px 1px black;
+
+
+
 }
 .contact .content-contact p{
-    
+
     font-weight: 500;
-    color:#c5baad;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 1px black;
+
+
+
 }
 .container{
     width: 100%;
@@ -615,23 +625,22 @@ hr {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    
+
 }
 .container .contactInfo{
     width: 40%;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(10px);
     height: 410px;
-    
-    
+
+
 }
 .container .contactInfo .box{
-   position: relative;
-   padding: 20px 0;
-   display: flex;
-   width: 30%;
-   backdrop-filter: blur(30px);
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    width: 70%;
+    /* backdrop-filter: blur(30px); */
 
 }
 .container .contactInfo .box:hover{
@@ -658,14 +667,15 @@ hr {
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: whitesmoke;
+    color: wheat;
+    text-shadow: 1px 1px black;
     flex-direction: column;
     font-weight:600;
 }
 .container .contactInfo .box .text h3{
-    font-weight: 700;
-    color:#666;
-
+    font-weight: 500;
+    color: white;
+    text-shadow: 1.5px 1.5px #333;
 }
 .contactform{
     /*width: 40%;*/
@@ -722,10 +732,10 @@ hr {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    
+
 }
 .contactform .inputBox .sub-btn:hover{
-    
+
     transform: scale(1.1);
     opacity: 80%;
 }
@@ -734,38 +744,45 @@ hr {
     .contact{
         padding: 150px 0 150px 0 ;
         align-content: center;
-        
+
 
     }
-    .contact .content-contact{
-        position: relative;
-        
+    @media (max-width: 1024px) {
+        .contact .content-contact {
+            padding-top: 5px;
+        }
+    }
+    @media (max-width: 1190px) {
+        .contact .content-contact {
+            padding-top: 5px;
+        }
+
     }
     .contact .content-contact h2{
-        
+
         font-size: 25px;
         font-weight: 500;
 
 
     }
     .contact .content-contact p{
-        
+
         font-weight: 200;
         padding: 0 20px 0 20px;
-        
+
 
     }
-  
+
     .container{
         flex-direction: column;
-        
+
     }
     .container .contactInfo{
         margin-bottom: 40px;
         width: 350px;
         padding: 20px 40px 20px 40px;
     }
- 
+
 
 }
 
@@ -774,37 +791,37 @@ hr {
     .contact{
         padding: 150px 0 150px 0 ;
         align-content: center;
-        
+
 
     }
     .contact .content-contact{
         position: relative;
-        
+
     }
     .contact .content-contact h2{
-        
+
         font-size: 25px;
         font-weight: 500;
 
 
     }
     .contact .content-contact p{
-        
+
         font-weight: 200;
         padding: 0 20px 0 20px;
-        
+
 
     }
-  
+
     .container{
         flex-direction: column;
-        
+
     }
     .container .contactInfo{
         margin-bottom: 40px;
         width: 300px;
-        
-        
+
+
     }
     .container  .contactform{
         width: 300px;
@@ -814,6 +831,7 @@ hr {
         font-size: 20px;
         font-weight: 400;
     }
-    
- 
+
+
 }
+
