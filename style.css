@@ -65,7 +65,8 @@ header{
     background: url(Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; <!--'doesnt work properly with Iphones'-->
+    background-attachment: fixed;
+    /*'doesnt work properly with Iphones'*/
 }
 
 .main h1 {
@@ -351,7 +352,6 @@ header{
     box-shadow: 1px 1px black;
     border-radius: 15px;
     border-color: #98918b;
-    border-style: wave;
     text-align: center;
     margin-right: 40px;
     margin-bottom: 40px;
