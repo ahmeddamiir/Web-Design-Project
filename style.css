@@ -13,6 +13,7 @@
     scroll-behavior: smooth;
 }
 
+
 header{
     width: 100%;
     position: fixed;
@@ -20,16 +21,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 150px;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #c5baad);
-    /*background-image: url("Pics/Isle_of_Graia,_Gulf_of_Akabah_LACMA_AC1997.145.1.jpg");*/
-    border-radius: 100px;
-    background-position: top;
+    padding: 5px 100px;
+    background-color: #98918b;
 }
 
 .website-name{
     text-decoration: none;
-    color: #c5baad;
+    color: floralwhite;
     text-shadow: .7px .7px black;
     text-transform: inherit;
     padding-left: 50px;
@@ -43,7 +41,7 @@ header{
 }
 
 .navigation a{
-    color: #c5baad;
+    color: floralwhite;
     text-shadow: .7px .7px black;
     text-decoration: none;
     font-size: 1.1em;
@@ -52,9 +50,8 @@ header{
 }
 
 .navigation a:hover{
-    color: #98918b;
+    color: black;
     font-size: larger;
-    font-weight: bolder;
 }
 
 .main{
@@ -69,28 +66,34 @@ header{
     /*'doesnt work properly with Iphones'*/
 }
 
+@media (max-width: 800px) {
+    .main {
+        padding-top: 200px;
+    }
+}
+
 .main h1 {
-    color: aliceblue;
-    text-shadow: 1.2px 1.2px black;
+    color: floralwhite;
     font-size: 1.4em;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 1.5px 1.5px black;
     text-align: center;
 }
 
 .main h1 span {
     display: inline-block;
     margin-top: 10px;
-    color: #c5baad;
+    color: lightslategrey;
     font-size: 3em;
     text-shadow: 1.5px 1.5px black;
     font-weight: 600;
 }
 
 .main h3 {
-    color: aliceblue;
+    color: floralwhite;
     font-size: 2em;
-    text-shadow: 1.3px 1.4px black;
-    font-weight: 700;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -114,7 +117,7 @@ header{
 }
 
 .main-btn:hover {
-    background-color: #c5baad;
+    background-color: black;
     transform: scale(1.1);
     opacity: 50%;
 }
@@ -143,8 +146,8 @@ header{
 .title {
     display: flex;
     justify-content: center;
-    color: steelblue;
-    text-shadow: 1px 1px black;
+    color: floralwhite;
+    text-shadow: 2px 2px black;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
@@ -160,7 +163,7 @@ header{
 .card {
     color: black;
     font-weight: bold;
-    background-color: rgba(183, 174, 163, 0.6);
+    background-color: wheat;
     font-size: larger;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
@@ -304,7 +307,7 @@ header{
 .partners {
     width: 100%;
     min-height: 35vh;
-    background-color: floralwhite;
+    background-color: wheat;
 }
 
 .partners .content {
@@ -333,7 +336,7 @@ header{
 }
 
 .subscribe {
-    background-color: floralwhite;
+    background-color: wheat;
 }
 
 .subscribe h3 {
@@ -385,7 +388,12 @@ header{
 .middle-side {
     min-height: 775px;
     padding-top: 150px;
-    width: 50%;
+    width: 100%;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-column: "";
 }
 
 @media (max-width: 1023px) {
@@ -631,6 +639,265 @@ hr {
     text-shadow: 1px 1px black;
 }
 
+/*--------------------Search Result---------------------------*/
+.search-result-page-header {
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+.search-result-page-header .website-name{
+    text-decoration: none;
+    color: #c5baad;
+    text-shadow: .7px .7px black;
+    text-transform: inherit;
+    padding-left: 50px;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+
+.search-result-page-header .logo{
+    text-decoration: none;
+    width: 150px;
+}
+.search-result-page-header .search-box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1023) {
+    .search-result-page-header {
+        width: 70%;
+        padding: 3px 7px;
+    }
+
+    .search-result-page-header .website-name{
+        padding-left: 40px;
+        font-size: 1.5em;
+    }
+
+    .search-result-page-header .logo{
+        width: 100px;
+    }
+
+    .search-result-page-header .search-box {
+        height: 10px;
+        padding: 7px 15px;
+    }
+
+    .search-result-page-header .search-box input {
+        padding: 100px;
+    }
+}
+
+@media (max-width: 700) {
+    .search-result-page-header {
+        width: 50%;
+        padding: 2px 5px;
+    }
+
+    .search-result-page-header .website-name{
+        padding-left: 30px;
+        font-size: 1.2em;
+    }
+
+    .search-result-page-header .logo{
+        width: 70px;
+    }
+
+    .search-result-page-header .search-box {
+        height: 7px;
+        padding: 4px 12px;
+    }
+
+    .search-result-page-header .search-box input {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 400) {
+    .search-result-page-header {
+        width: 30%;
+        padding: 1px 3px;
+    }
+
+    .search-result-page-header .website-name{
+        padding-left: 15px;
+        font-size: 1em;
+    }
+
+    .search-result-page-header .logo{
+        width: 50px;
+    }
+
+    .search-result-page-header .search-box {
+        height: 4px;
+        padding: 2px 9px;
+    }
+
+    .search-result-page-header .search-box input {
+        padding: 45px;
+    }
+}
+.search-result-page-header .search-box input {
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    background: transparent;
+    transition: 0.8s;
+}
+
+.search-result-page-header .search-box:hover input {
+    width: 200px;
+}
+
+.search-result-page-header .search-box a .fas {
+    color: #817674;
+    font-size: 18px;
+}
+
+.search-result-page-header .search-result
+{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.search-result-page-header .navigation a{
+    color: #c5baad;
+    text-shadow: .7px .7px black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.search-main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url(Pics/whitedesert.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.search-main h1 {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 4em;
+    font-weight: 600;
+    padding-top: 150px;
+}
+
+.search-main h3 {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*********************Detail Page***********************/
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+/* About */
+.about {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+.about-item {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    background-color: #95e1d3;
+}
+
+.about-item:hover .about-img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about-item:hover .about-img img {
+    opacity: .1;
+}
+
+.about-item:hover .about-text {
+    opacity: 1;
+}
+
+.about-img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    max-width: 100%;
+    height: auto;
+    transition: transform .2s linear;
+}
+
+.about-img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about-text {
+    width: 100%;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
 /*Screens from 0 pixels to 1023*/
 @media (max-width: 1023px) {
     header {
@@ -685,3 +952,256 @@ hr {
     }
 
 }
+/*---------------------------contact page ----------------------*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./Pics/background-g31e1edc8b_1920.jpeg);
+    background-size: cover;
+}
+
+.contact .content-contact{
+    max-width: 500px;
+    text-align: center;
+    padding-top: 100px;
+    /* backdrop-filter: blur(20px); */
+
+}
+.contact .content-contact h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:wheat;
+    text-shadow: 1px 1px black;
+
+
+
+}
+.contact .content-contact p{
+
+    font-weight: 500;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 1px black;
+
+
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.container .contactInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+
+
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    width: 70%;
+    /* backdrop-filter: blur(30px); */
+
+}
+.container .contactInfo .box:hover{
+    transform: scale(1.1);
+    opacity: 90%;
+
+}
+.container .contactInfo .box .icon-contact{
+    min-width: 60px;
+    height: 60px;
+    background-color:#c5baad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contactInfo .box .icon-contact .fa {
+    color: black;
+
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: wheat;
+    text-shadow: 1px 1px black;
+    flex-direction: column;
+    font-weight:600;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: white;
+    text-shadow: 1.5px 1.5px #333;
+}
+.contactform{
+    /*width: 40%;*/
+    padding: 30px 60px;
+    background: #c5baad;
+}
+
+.contactform h2{
+    font-size: 30px;
+    color:#664c2e ;
+    font-weight: 500;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span{
+    color: #664c2e;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: #817674;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+.contactform .inputBox .sub-btn:hover{
+
+    transform: scale(1.1);
+    opacity: 80%;
+}
+/* for ipads */
+@media (max-width:1190px){
+    .contact{
+        padding: 150px 0 150px 0 ;
+        align-content: center;
+
+
+    }
+    @media (max-width: 1024px) {
+        .contact .content-contact {
+            padding-top: 5px;
+        }
+    }
+    @media (max-width: 1190px) {
+        .contact .content-contact {
+            padding-top: 5px;
+        }
+
+    }
+    .contact .content-contact h2{
+
+        font-size: 25px;
+        font-weight: 500;
+
+
+    }
+    .contact .content-contact p{
+
+        font-weight: 200;
+        padding: 0 20px 0 20px;
+
+
+    }
+
+    .container{
+        flex-direction: column;
+
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        width: 350px;
+        padding: 20px 40px 20px 40px;
+    }
+
+
+}
+
+/* for phones */
+@media (max-width:900px){
+    .contact{
+        padding: 150px 0 150px 0 ;
+        align-content: center;
+
+
+    }
+    .contact .content-contact{
+        position: relative;
+
+    }
+    .contact .content-contact h2{
+
+        font-size: 25px;
+        font-weight: 500;
+
+
+    }
+    .contact .content-contact p{
+
+        font-weight: 200;
+        padding: 0 20px 0 20px;
+
+
+    }
+
+    .container{
+        flex-direction: column;
+
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        width: 300px;
+
+
+    }
+    .container  .contactform{
+        width: 300px;
+        padding: 20px 40px 20px 40px;
+    }
+    .container .contactform h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
